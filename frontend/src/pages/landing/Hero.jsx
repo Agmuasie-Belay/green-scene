@@ -14,8 +14,8 @@ const MotionBox = motion(Box);
 
 const Hero = () => {
   const glassBg = useColorModeValue(
-    "rgba(255,255,255,0.05)",
-    "rgba(255,255,255,0.03)"
+    "rgba(255,255,255,0.08)",
+    "rgba(255,255,255,0.04)"
   );
   const glassBorder = useColorModeValue(
     "rgba(255,255,255,0.2)",

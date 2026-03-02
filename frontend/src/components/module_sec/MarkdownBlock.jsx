@@ -12,7 +12,6 @@ import {
 import ReactMarkdown from "react-markdown";
 
 const MarkdownBlock = ({ data }) => {
-  console.log("Rendering MarkdownBlock with content:", data);
   return (
     <Box
       p={6}

@@ -99,9 +99,9 @@ function Navbar() {
               <Button
                 size="sm"
                 variant="solid"
+                color="#bfc20a"
                 bg="#00305a"
                   _hover={{ bg: "#0256ab" }}
-                color="white"
                 borderRadius="full"
                 px={6}
                 border="1px solid"
@@ -156,7 +156,9 @@ function Navbar() {
                 <Button
                   variant="solid"
                   w="full"
-                  bg="#00305a"
+                  
+                color="#bfc20a"
+                bg="#00305a"
                   _hover={{ bg: "#0256ab" }}
                 >
                   Login

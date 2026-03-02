@@ -1,10 +1,11 @@
 import { Box, Text } from "@chakra-ui/react";
 
 const PPTBlock = ({ data, title }) => {
-  const embedUrl = data.path?.includes("/embed")
-    ? data.path
-    : `${data.path}/embed`;
-
+  // const embedUrl = data.path?.includes("/embed")
+  //   ? data.path
+  //   : `${data.path}/embed`;
+const url = data.url;
+console.log("PPT URL:", url);
   return (
     <Box mb={6}>
       <Text fontSize="lg" fontWeight="bold" p={4}>
@@ -12,7 +13,7 @@ const PPTBlock = ({ data, title }) => {
       </Text>
 
       <iframe
-        src={embedUrl}
+        src={url}
         width="100%"
         height="420px"
         frameBorder="0"
@@ -20,10 +21,7 @@ const PPTBlock = ({ data, title }) => {
         mozAllowFullScreen="true"
         webkitAllowFullScreen="true"
         style={{
-          borderTopLeftRadius: "12px",
-          borderTopRightRadius: "12px",
-          borderBottomLeftRadius: "0px",
-          borderBottomRightRadius: "0px",
+          borderRadius: "0px",
         }}
       />
     </Box>

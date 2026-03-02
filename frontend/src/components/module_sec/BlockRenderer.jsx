@@ -11,7 +11,6 @@ const BlockRenderer = ({
   enrollmentId,
   progress,
 }) => {
-  console.log("Rendering BlockRenderer for block:", block);
   switch (block.type) {
     case "video":
       return (
