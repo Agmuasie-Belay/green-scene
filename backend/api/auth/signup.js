@@ -25,7 +25,7 @@ async function pushAudit(user, action, req, extra = {}) {
   }
 }
 
-export default async function handler(req, res) {
+async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ message: "Method not allowed" });
   await connectDB();
 
@@ -76,3 +76,5 @@ export default async function handler(req, res) {
     return res.status(500).json({ success: false, message: "Server error" });
   }
 }
+
+export default allowCors(handler);
